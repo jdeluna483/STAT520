@@ -1,4 +1,7 @@
 #Inference for Binomial with Beta Prior
+library(ggplot2)
+library(reshape2)
+
 BBB<-function(n,p,alpha,beta)
 {
   require(ggplot2)
@@ -23,9 +26,9 @@ BBB<-function(n,p,alpha,beta)
  
 }
 
-n<-1
-p<-0.3
-alpha<-1
+n<-5
+p<-0.5
+alpha<-2
 beta<-1
 
 BBB(n,p,alpha,beta)
@@ -58,4 +61,5 @@ BNN<-function(n,mu,sigma,theta,tau)
   
 }
 
-BNN(10,20,5,12,4)
+BNN(5,10,3,6,3)
+
